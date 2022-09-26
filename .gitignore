@@ -1,0 +1,12 @@
+# created by virtualenv automatically
+
+*Lib
+*Scripts
+*pyvenv.cfg
+
+*.vscode
+__pycache__/
+*.env
+*.log
+local_settings.py
+*.env
