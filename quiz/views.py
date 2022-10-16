@@ -31,5 +31,5 @@ class Answers(ListAPIView):
         question = self.kwargs['question']
         subject = self.kwargs['subject'].title()
 
-        if len(Questions.objects.filter(subject=subject , question = question)) == 1:
+        if len(Questions.objects.filter(subject=subject , question=question)) == 1:
             return Answer.objects.filter(question_number__question=question)
