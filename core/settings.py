@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'quiz',
+    'authentication',
 ]
 
 MIDDLEWARE = [
@@ -146,7 +147,7 @@ REST_FRAMEWORK = {
     ]
 }
 
-# PASSWORD_HASHERS = [
-#     'authentication.hashers.MyBcrypt',
-#     'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
-# ]
+PASSWORD_HASHERS = [
+    'authentication.hashers.MyBcrypt',
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+]
